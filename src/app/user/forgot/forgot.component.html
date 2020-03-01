@@ -1,0 +1,25 @@
+<h4> Forgot Pin</h4>
+<br>
+<div class="container">
+    <div class="row">
+        <div class="col s8 offset-s2">
+            <div class="card grey lighten-2">
+                
+                    <form #loginForm="ngForm" class="col s12 white" (ngSubmit)="onSubmit(UserName.value)">
+                        <div class="row">
+                            <div class="input-field col s12">
+                               
+                                <input type="text" #UserName ngModel name="UserName" placeholder="AtmNo" required>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">reset Password</button>
+                            </div>
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>

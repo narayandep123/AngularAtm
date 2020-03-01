@@ -89,6 +89,9 @@
             "scripts": []
           }
         },
+        "map": {
+  "ngx-toastr": "node_modules/ngx-toastr/bundles/ngx-toastr.umd.min.js"
+},
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {

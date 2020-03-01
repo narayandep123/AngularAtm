@@ -1,0 +1,40 @@
+<h4> Update Mobile/h4>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col s8 offset-s2">
+                    <div class="card grey lighten-2">
+                        
+                            <form #loginForm="ngForm" class="col s12 white" (ngSubmit)="onSubmit(UserName.value,PhoneNumber1.value,PhoneNumber2.value)">
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                       
+                                        <input type="text" #UserName ngModel name="UserName" placeholder="AtmNo" required>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                        <div class="input-field col s12">
+                                           
+                                            <input type="PhoneNumber" #PhoneNumber1 ngModel name="PhoneNumber1" placeholder="new PhoneNumber" required>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <div class="row">
+                                            <div class="input-field col s12">
+                                               
+                                                <input type="PhoneNumber" #PhoneNumber2 ngModel name="PhoneNumber2" placeholder="confirm PhoneNumber" required>
+                                            </div>
+                                        </div>
+                                        <br>
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <button [disabled]="!loginForm.valid" class="btn-large btn-submit" type="submit">Update Pin</button>
+                                    </div>
+                                </div>
+                            </form>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>

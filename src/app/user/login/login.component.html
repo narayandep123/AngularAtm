@@ -1,0 +1,26 @@
+<form #form='ngForm' class="mb-4" autocomplete="off" (submit)="onSubmit(form)">
+  <div class="form-group">
+    <label>Atm No</label>
+    <input class="form-control" #UserName="ngModel" name="UserName" [(ngModel)]="formModel.UserName" required>
+  </div>
+  <div class="form-group">
+    <label>Pin</label>
+    <input type="password" class="form-control" #Password="ngModel" name="Password" [(ngModel)]="formModel.Password" required>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-8 offset-md-2">
+      <button type="submit" class="btn btn-lg btn-block" [disabled]="form.invalid">Login</button>
+    </div>
+  </div>
+</form>
+<!-- <div class="card">
+  <div class="card-content">
+     <div class="card-action">
+         <button class="btn" (click)="onSubmit1()">Forgot Password</button>
+     </div><br>
+ </div>
+</div> -->
+
+ <button class="btn btn-primary" type="submit" (click)="onSubmit1()">Resest Your Pin</button> 
+  <!--modal-->
+  

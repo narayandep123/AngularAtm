@@ -1,0 +1,49 @@
+<nav class="navbar navbar-dark bg-dark">
+    <a class="navbar-brand text-white">Authentication Success </a>
+    <button class="btn btn-danger my-2 my-sm-0" (click)="onLogout()">Logout</button>
+  </nav>
+  <h2> State Bank Of India !</h2>
+  <div class="card m-5" style="width:18rem" *ngIf="userDetails">
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Atm_No : </strong>{{userDetails.userName}}</li>
+      <!-- <li class="list-group-item"><strong>FullName : </strong>{{userDetails.fullName}}</li>
+      <li class="list-group-item"><strong>Email : </strong>{{userDetails.email}}</li> -->
+    </ul>
+  </div>
+
+      <br>
+  
+      <div class="a1">
+  
+        <!-- <button class="btn" (click)="OnSubmitw()">withdrow</button>  -->
+        <button class="btn btn-primary" type="submit" (click)="onSubmitw()">withdrow</button>
+        
+  
+      </div>
+<br>
+      <div class="a2">
+        <!-- <button class="btn" (click)="OnSubmitd()">deposit </button> -->
+        <button class="btn btn-primary" type="submit" (click)="onSubmitd()">deposit</button>
+      </div>
+  
+      <br>
+  
+      <div class="a3">
+        <!-- <button class="btn" (click)="OnSubmitu()">update mobiler</button> -->
+        <button class="btn btn-primary" type="submit" (click)="onSubmitu()">update mobiler</button>
+      </div>
+  
+  <br>
+      <div class="a4">
+        <!-- <button class="btn" (click)="OnSubmitv()">view balance </button> -->
+        <button class="btn btn-primary" type="submit" (click)="onSubmitv()">view balance</button>
+      </div>
+  
+      <br>
+  <div class="a5">
+      <!-- <button class="btn" (click)="OnSubmitl()">view last 10 transaction
+      </button> -->
+      <button class="btn btn-primary" type="submit" (click)="onSubmitl()">view last 10 transaction</button>
+  </div>
+  
+ 
